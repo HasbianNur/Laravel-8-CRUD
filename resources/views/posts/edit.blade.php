@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Edit Post - Tutorial CRUD Laravel 8 @ qadrlabs.com</title>
+    <title>Edit Post - CRUD Laravel 8</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- include summernote css -->
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -71,8 +72,8 @@
                                 @enderror
                             </div>
 
-                            <button type="submit" class="btn btn-md btn-primary">Update</button>
-                            <a href="{{ route('post.index') }}" class="btn btn-md btn-secondary">back</a>
+                            <button type="submit" class="btn btn-md btn-warning"><i class="bi bi-pencil-square"></i></button>
+                            <a href="{{ route('post.index') }}" class="btn btn-md btn-secondary"><i class="bi bi-box-arrow-in-left"></i></a>
                         </form>
                     </div>
                 </div>
